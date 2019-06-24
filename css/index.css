@@ -179,13 +179,13 @@ img {
   margin: 0 10px 0 10px;
   width: 90px;
 }
-nav {
+#header nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   height: 60px;
 }
-.nav-bar a {
+#header a {
   text-decoration: none;
   text-align: center;
   color: grey;
