@@ -1,16 +1,21 @@
-#header {
-  // border: 1px solid black;
-  ul {
-    // border: 1px solid black;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: .5rem;
-    li {
-      // border: 1px solid black;
-      padding: 1rem;
-    }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  @media @phone {
+      width: 100%;
   }
 }
+
 
 .cta {
   margin: 5rem;
@@ -45,5 +50,17 @@
 
 .topContent {
   border: 1px solid black;
+  text-align: center;
+  padding: 3rem;
+
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.2rem;
+    display: inline-block;
+    border-top: 2px solid grey;
+    padding-top: 1rem;
+  }
 
 }
