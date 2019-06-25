@@ -279,35 +279,35 @@ aboutNav {
   flex-direction: column;
   justify-content: middle;
 }
-.aboutBox .aboutBoxTop .aboutImg {
-  width: 60%;
-  height: 300px;
-  background-color: lightgray;
-}
 .aboutBox h2 {
-  padding: 15px;
-  padding-bottom: 60px;
+  padding: 10px 0 0 0;
+  font-size: 4rem;
+  text-align: left;
 }
 .aboutBox p {
   padding-bottom: 40px;
+  text-align: left;
 }
 .aboutMidBox {
   display: flex;
   flex-direction: row;
+  padding-right: 0px;
 }
 .aboutMidBox .reportCard {
   width: 30%;
   margin-right: 20px;
 }
-.aboutMidBox .reportCard h2 {
+.aboutMidBox .reportCard h3 {
+  font-size: 3rem;
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding-bottom: 0px;
   padding-top: 0px;
 }
 .aboutMidBox .aboutImg {
   width: 65%;
   margin-left: 20px;
+  height: 500px;
 }
 /* Style the buttons that are used to open and close the accordion panel */
 .reportCard {
@@ -323,7 +323,7 @@ aboutNav {
   background-color: #F6F7F8;
   color: #444;
   cursor: pointer;
-  padding: 18px;
+  padding: 18px 18px 18px 0px;
   width: 100%;
   text-align: left;
   border: none;
@@ -343,4 +343,37 @@ aboutNav {
   overflow: hidden;
   text-align: left;
   padding-top: 20px;
+}
+.aboutBottomBox {
+  display: flex;
+  flex-direction: row;
+}
+.aboutBottomLeftBox {
+  padding-top: 60px;
+  height: 650px;
+  display: flex;
+  flex-direction: row;
+  width: 650px;
+}
+.aboutBottomLeftBox .block1 {
+  background: #14150F;
+  height: 90%;
+  width: 33%;
+  align-self: flex-end;
+}
+.aboutBottomLeftBox .block2 {
+  background: #14150F;
+  height: 60%;
+  width: 33%;
+  align-self: flex-end;
+}
+.aboutBottomLeftBox .block3 {
+  background: #14150F;
+  height: 30%;
+  width: 33%;
+  align-self: flex-end;
+}
+.aboutBottomRightBox {
+  margin-left: -400px;
+  margin-top: 150px;
 }
