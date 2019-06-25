@@ -6,7 +6,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/index.css" />
-    <script></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="main.js"></script>
   </head>
   <body class="">
     <div id="container">
@@ -18,17 +19,34 @@
             <a href="">Home</a>
             <a href="">About</a>
             <a href="">Team</a>
+            <a href="">Sign Up</a>
           </nav>
         </div>
       </header>
 
       <!--BANNER-->
       <section class="banner">
-        <h1>LifeGPA</h1>
-        <p>Eget velit aliquet sagittis id consectetur purus.</p>
-        <div class="actions special">
-          <button>Sign Up</button>
-          <button>Learn More</button>
+        <img src="assets/logo.png"/>
+        <div class="title">
+        <h1 class="title" data-end="TM">LifeGPA</h1>
+        </div>
+        <p>Summarize your life's most important efforts into a simple composite number.</p>
+        <div class="circle-wrap">
+          <div class="text">LGPA<br><span id="gpa"></span><span>%</span>
+          </div>
+          <div class="radial-progress">
+              <div class="circle">
+                  <div class="mask full">
+                      <div class="fill"></div>
+                  </div>
+                  <div class="mask half">
+                      <div class="fill"></div>
+                      <div class="fill fix"></div>
+                  </div>
+                  <div class="shadow"></div>
+              </div>
+              <div class="inset"></div>
+          </div>
         </div>
       </section>
 
@@ -36,16 +54,8 @@
       <section class="main">
 
         <div class="box">
-          <h2>Maecenas ultricies mi eget mauris pharetra et ultrices
-          <br />
-          ut sem nulla pharetra diam sit</h2>
-          <p>Sed odio morbi quis commodo odio aenean sed adipiscing. Proin libero nunc consequat interdum 
-              varius sit amet. Fermentum posuere urna nec tincidunt praesent semper</p>
-          <div class="image"></div>
-        </div>
-
-        <div class="secondary">
-  
+            <button>GET STARTED</button>
+            <button>LEARN MORE</button>
         </div>
 
       </section>
