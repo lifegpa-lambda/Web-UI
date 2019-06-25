@@ -228,9 +228,9 @@ aboutNav {
   justify-content: flex-end;
   align-items: center;
   height: 60px;
-  background: #d4e09b;
+  background: #7fefbd;
   border-radius: 6px;
-  box-shadow: 0 8px 0 0 #e5e5e5;
+  box-shadow: 0 8px 0 0 #cbdfbd;
 }
 .aboutNav-bar a {
   text-decoration: none;
@@ -240,7 +240,7 @@ aboutNav {
   font-size: 14px;
 }
 .aboutBanner {
-  background-color: #cbdfbd;
+  background-color: #54577c;
   height: 500px;
 }
 .aboutBanner h1 {
@@ -276,7 +276,7 @@ aboutNav {
 }
 .aboutBox .aboutBoxTop {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: middle;
 }
 .aboutBox .aboutBoxTop .aboutImg {
@@ -290,4 +290,57 @@ aboutNav {
 }
 .aboutBox p {
   padding-bottom: 40px;
+}
+.aboutMidBox {
+  display: flex;
+  flex-direction: row;
+}
+.aboutMidBox .reportCard {
+  width: 30%;
+  margin-right: 20px;
+}
+.aboutMidBox .reportCard h2 {
+  text-align: left;
+  margin-bottom: 20px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.aboutMidBox .aboutImg {
+  width: 65%;
+  margin-left: 20px;
+}
+/* Style the buttons that are used to open and close the accordion panel */
+.reportCard {
+  display: flex;
+  flex-direction: column;
+}
+.reportCard button {
+  font-size: 2.5rem;
+  border-bottom: 2px solid;
+}
+.gradeCard {
+  width: 50%;
+  background-color: #F6F7F8;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.gradeCard:hover {
+  background-color: #ccc;
+}
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  text-align: left;
+  padding-top: 20px;
 }
