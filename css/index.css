@@ -223,3 +223,71 @@ nav {
 .box p {
   padding-bottom: 40px;
 }
+aboutNav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 60px;
+  background: #d4e09b;
+  border-radius: 6px;
+  box-shadow: 0 8px 0 0 #e5e5e5;
+}
+.aboutNav-bar a {
+  text-decoration: none;
+  text-align: center;
+  color: grey;
+  padding: 25px;
+  font-size: 14px;
+}
+.aboutBanner {
+  background-color: #cbdfbd;
+  height: 500px;
+}
+.aboutBanner h1 {
+  padding-top: 90px;
+  padding-bottom: 30px;
+}
+.aboutBanner p {
+  padding-bottom: 30px;
+}
+.aboutBanner button {
+  padding: 10px;
+  margin: 0 10px 0 10px;
+  width: 90px;
+}
+.aboutMain {
+  display: flex;
+  justify-content: center;
+}
+.aboutBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: middle;
+  background: #F6F7F8;
+  border-radius: 6px;
+  box-shadow: 0 2px 0 0 #e5e5e5;
+  margin: 0 0 2em 0;
+  padding: 3em;
+  text-align: center;
+  margin-top: -450px;
+  position: absolute;
+  z-index: 5;
+  width: 60%;
+}
+.aboutBox .aboutBoxTop {
+  display: flex;
+  flex-direction: row;
+  justify-content: middle;
+}
+.aboutBox .aboutBoxTop .aboutImg {
+  width: 60%;
+  height: 300px;
+  background-color: lightgray;
+}
+.aboutBox h2 {
+  padding: 15px;
+  padding-bottom: 60px;
+}
+.aboutBox p {
+  padding-bottom: 40px;
+}

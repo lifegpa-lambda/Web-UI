@@ -1,0 +1,77 @@
+//nav
+aboutNav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
+    background: @nav-background;
+    border-radius: 6px;
+    box-shadow: 0 8px 0 0 #e5e5e5;
+  }
+  .aboutNav-bar a{
+    text-decoration: none;
+    text-align: center;
+    color: grey;
+    padding: 25px;
+    font-size: 14px;
+  }
+
+  //banner
+  .aboutBanner {
+    background-color: @about-banner;
+    height: 500px;
+    h1 {
+      padding-top: 90px;
+      padding-bottom: 30px;
+    }
+    p {
+      padding-bottom: 30px;
+    }
+    button {
+      padding: 10px;
+      margin: 0 10px 0 10px;
+      width: 90px;
+    }
+  }
+
+  //main
+  .aboutMain {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .aboutBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: middle;
+    background: @porcelain;
+    border-radius: 6px;
+    box-shadow: 0 2px 0 0 #e5e5e5;
+    margin: 0 0 2em 0;
+    padding: 3em;
+    text-align: center;
+    margin-top: -450px;
+    position: absolute;
+    z-index: 5;
+    width: 60%;
+
+    .aboutBoxTop{
+      display: flex;
+      flex-direction: row;
+      justify-content: middle;
+      .aboutImg {
+        width: 60%;
+        height: 300px;
+        background-color: lightgray;
+      }
+    }
+    h2 {
+      padding: 15px;
+      padding-bottom: 60px;
+    }
+    p {
+      padding-bottom: 40px;
+    }
+  }
+
+  
