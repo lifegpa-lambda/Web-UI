@@ -192,14 +192,21 @@ img {
   padding: 25px;
   font-size: 14px;
 }
+#footer {
+  bottom: 0;
+  margin-bottom: 0px;
+}
+#footer li {
+  display: inline-block;
+  padding: 20px;
+  font-size: 14px;
+}
 .main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 .box {
-  display: flex;
-  flex-direction: column;
-  justify-content: middle;
   background: #fff;
   border-radius: 6px;
   box-shadow: 0 2px 0 0 #e5e5e5;
@@ -207,9 +214,9 @@ img {
   padding: 3em;
   text-align: center;
   margin-top: -70px;
-  position: absolute;
-  z-index: 5;
   width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .box .image {
   width: 100%;
@@ -222,4 +229,13 @@ img {
 }
 .box p {
   padding-bottom: 40px;
+}
+.secondary {
+  width: 80%;
+  height: 400px;
+  background-color: lightgray;
+  margin: 0 0 2em 0;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
