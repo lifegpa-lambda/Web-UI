@@ -217,6 +217,12 @@ html {
 body {
   background-color: white;
 }
+h2 {
+  color: black;
+}
+p {
+  color: black;
+}
 .bannerWelcome h2 {
   text-align: center;
   margin: 1rem 0 2rem 0;
@@ -265,7 +271,6 @@ body {
   max-width: 800px;
   margin: auto;
   text-align: center;
-  background-color: #f6f4d2;
   -ms-flex-pack: distribute;
   justify-content: space-around;
 }
@@ -276,14 +281,16 @@ body {
     -ms-flex-direction: column;
     flex-direction: column;
     margin: 0 1rem;
+    background-color: white;
   }
 }
 .tabs .tabs-link {
   padding: 20px 20px;
   font-size: 2.4rem;
-  border: 1px solid black;
+  border: 1px solid grey;
   border-radius: 10px;
   color: black;
+  background-color: white;
   cursor: pointer;
 }
 .tabs .tabs-link:hover {
@@ -294,9 +301,11 @@ body {
     text-align: center;
     font-size: 2rem;
     border-radius: 0;
+    border: 1px solid black;
   }
 }
 .tabs .tabs-link-selected {
+  background-color: white;
   color: black;
 }
 .tabs .tabs-link-selected:hover {
