@@ -6,7 +6,7 @@ aboutNav {
     height: 60px;
     background: @nav-background;
     border-radius: 6px;
-    box-shadow: 0 8px 0 0 #e5e5e5;
+    box-shadow: 0 8px 0 0 @sage-green;
   }
   .aboutNav-bar a{
     text-decoration: none;
@@ -57,21 +57,113 @@ aboutNav {
 
     .aboutBoxTop{
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: middle;
-      .aboutImg {
-        width: 60%;
-        height: 300px;
-        background-color: lightgray;
-      }
     }
     h2 {
-      padding: 15px;
-      padding-bottom: 60px;
+      padding: 10px 0 0 0;
+      font-size: 4rem;
+      text-align: left
     }
     p {
       padding-bottom: 40px;
+      text-align: left;
     }
   }
+  .aboutMidBox{
+    display: flex;
+    flex-direction: row;
+    padding-right: 0px;
+    .reportCard{
+      width: 30%;
+      margin-right: 20px;
+      h3{
+        font-size: 3rem;
+        text-align: left;
+        margin-bottom: 10px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+      }
+    }
+    .aboutImg{
+      width: 65%;
+      margin-left: 20px;
+      //width: 600px;
+      height: 500px;
+      }
+    }
+  
 
   
+/* Style the buttons that are used to open and close the accordion panel */
+.reportCard{
+  display: flex;
+  flex-direction: column;
+  button{
+    font-size: 2.5rem;
+    border-bottom: 2px solid;
+  }
+}
+.gradeCard {
+  width: 50%;
+  background-color: @porcelain;
+  color: #444;
+  cursor: pointer;
+  padding: 18px 18px 18px 0px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .gradeCard:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  text-align: left;
+  padding-top: 20px;
+}
+
+.aboutBottomBox{
+  display: flex;
+  flex-direction: row;
+}
+
+.aboutBottomLeftBox{
+  padding-top: 60px;
+  height: 650px;
+  display: flex;
+  flex-direction: row;
+  width: 650px;
+  .block1{
+    background: @licorice;
+    height: 90%;
+    width: 33%;
+    align-self: flex-end;
+  }
+  .block2{
+    background: @licorice;
+    height: 60%;
+    width: 33%;
+    align-self: flex-end;
+  }
+  .block3{
+    background: @licorice;
+    height: 30%;
+    width: 33%;
+    align-self: flex-end;
+  }
+}
+
+.aboutBottomRightBox{
+  margin-left: -400px;
+  margin-top: 150px;
+}
