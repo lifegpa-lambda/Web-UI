@@ -747,7 +747,7 @@ p {
 @media (max-width:500px) {
   .tabs .bannerImage img {
     height: 350px;
-    margin-top: -316px;
+    margin-top: -326px;
   }
 }
 .tabs .tabs-link {
