@@ -1,3 +1,7 @@
+.mobile-content {
+  max-width: 450px;
+  margin: 10px auto 0 auto;
+}
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -138,14 +142,292 @@ html {
   width: 100%;
   margin: 0 auto;
 }
-@media (max-width: 550px) {
+@media (max-width:500px) {
   .container {
     width: 100%;
   }
 }
-.mobile-content {
-  max-width: 450px;
-  margin: 10px auto 0 auto;
+aboutNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 60px;
+  background: #7fefbd;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 8px 0 0 #cbdfbd;
+  box-shadow: 0 8px 0 0 #cbdfbd;
+}
+.aboutNav-bar a {
+  text-decoration: none;
+  text-align: center;
+  color: grey;
+  padding: 25px;
+  font-size: 14px;
+}
+.aboutBanner {
+  background-color: #54577c;
+  height: 500px;
+}
+.aboutBanner h1 {
+  padding-top: 90px;
+  padding-bottom: 30px;
+}
+.aboutBanner p {
+  padding-bottom: 30px;
+}
+.aboutBanner button {
+  padding: 10px;
+  margin: 0 10px 0 10px;
+  width: 90px;
+}
+.aboutMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.aboutBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: middle;
+  -ms-flex-pack: middle;
+  justify-content: middle;
+  background: #F6F7F8;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 2px 0 0 #e5e5e5;
+  box-shadow: 0 2px 0 0 #e5e5e5;
+  margin: 0 0 2em 0;
+  padding: 3em;
+  text-align: center;
+  margin-top: -450px;
+  position: absolute;
+  z-index: 5;
+  width: 1100px;
+}
+@media (max-width:1100px) {
+  .aboutBox {
+    width: 100%;
+    padding: 20px;
+  }
+}
+.aboutBox .aboutBoxTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+@media (max-width:1100px) {
+  .aboutBox .aboutBoxTop {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
+.aboutBox h2 {
+  padding: 10px 0 0 0;
+  font-size: 4rem;
+  text-align: left;
+}
+.aboutBox p {
+  padding-bottom: 40px;
+  text-align: left;
+}
+.aboutMidBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-right: 0px;
+}
+@media (max-width:1100px) {
+  .aboutMidBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.aboutMidBox .reportCard {
+  width: 30%;
+  margin-right: 20px;
+}
+@media (max-width:1100px) {
+  .aboutMidBox .reportCard {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+}
+.aboutMidBox .reportCard h3 {
+  font-size: 3rem;
+  text-align: left;
+  margin-bottom: 10px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.aboutMidBox .aboutImg {
+  width: 65%;
+  margin-left: 20px;
+  height: 500px;
+}
+@media (max-width:1100px) {
+  .aboutMidBox .aboutImg {
+    width: 100%;
+    margin-left: 0;
+    height: 30%;
+  }
+}
+/* Style the buttons that are used to open and close the accordion panel */
+.reportCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.reportCard button {
+  font-size: 2.5rem;
+  border-bottom: 2px solid;
+}
+.gradeCard {
+  width: 50%;
+  background-color: #F6F7F8;
+  color: #444;
+  cursor: pointer;
+  padding: 18px 18px 18px 0px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.gradeCard:hover {
+  background-color: #ccc;
+}
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  text-align: left;
+  padding-top: 20px;
+}
+.aboutBottomBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+@media (max-width:1100px) {
+  .aboutBottomBox {
+    width: 100%;
+  }
+}
+.aboutBottomBox {
+  padding-top: 60px;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+}
+.aboutBottomBox .row1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  height: 33%;
+}
+.aboutBottomBox .row1 h2 {
+  margin-left: 20px;
+  width: 80%;
+}
+.aboutBottomBox .row2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  height: 33%;
+}
+.aboutBottomBox .row2 h2 {
+  margin-left: 20px;
+  width: 60%;
+}
+.aboutBottomBox .block1 {
+  background: #14150F;
+  height: 100%;
+  width: 20%;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+@media (max-width:1100px) {
+  .aboutBottomBox .block1 {
+    width: 40%;
+  }
+}
+.aboutBottomBox .block2 {
+  background: #14150F;
+  height: 100%;
+  width: 40%;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+@media (max-width:1100px) {
+  .aboutBottomBox .block2 {
+    width: 100%;
+  }
+}
+.aboutBottomBox .block3 {
+  background: #14150F;
+  height: 33%;
+  width: 60%;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+@media (max-width:1100px) {
+  .aboutBottomBox .block3 {
+    width: 100%;
+  }
 }
 header {
   max-width: 400px;
@@ -159,7 +441,7 @@ header ul {
   -ms-flex-pack: center;
   justify-content: center;
 }
-@media (max-width: 550px) {
+@media (max-width:500px) {
   header ul {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -170,9 +452,6 @@ header ul li {
   padding: 1rem;
   font-size: 1.8rem;
   color: white;
-}
-body {
-  background-color: white;
 }
 h2 {
   color: black;
@@ -189,7 +468,7 @@ p {
   margin: 1rem 0 2rem 0;
   font-size: 3rem;
 }
-@media (max-width: 550px) {
+@media (max-width:500px) {
   .bannerWelcome h2 {
     color: white;
   }
@@ -251,7 +530,7 @@ p {
   -ms-flex-pack: distribute;
   justify-content: space-around;
 }
-@media (max-width: 550px) {
+@media (max-width:500px) {
   .tabs .tabs-links {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -270,9 +549,9 @@ p {
   position: relative;
   z-index: -1;
 }
-@media (max-width: 550px) {
+@media (max-width:500px) {
   .tabs .bannerImage img {
-    height: 330px;
+    height: 350px;
     margin-top: -316px;
   }
 }
@@ -284,7 +563,7 @@ p {
   color: white;
   cursor: pointer;
 }
-@media (max-width: 550px) {
+@media (max-width:500px) {
   .tabs .tabs-link {
     text-align: center;
     font-size: 2rem;

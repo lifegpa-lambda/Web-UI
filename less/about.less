@@ -1,0 +1,220 @@
+@ABTtablet: ~"(max-width:1100px)";
+
+//nav
+aboutNav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
+    background: @nav-background;
+    border-radius: 6px;
+    box-shadow: 0 8px 0 0 @sage-green;
+    
+  }
+  .aboutNav-bar a{
+    text-decoration: none;
+    text-align: center;
+    color: grey;
+    padding: 25px;
+    font-size: 14px;
+  }
+
+  //banner
+  .aboutBanner {
+    background-color: @about-banner;
+    height: 500px;
+   
+    h1 {
+      padding-top: 90px;
+      padding-bottom: 30px;
+    }
+    p {
+      padding-bottom: 30px;
+    }
+    button {
+      padding: 10px;
+      margin: 0 10px 0 10px;
+      width: 90px;
+    }
+  }
+
+  //main
+  .aboutMain {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .aboutBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: middle;
+    background: @porcelain;
+    border-radius: 6px;
+    box-shadow: 0 2px 0 0 #e5e5e5;
+    margin: 0 0 2em 0;
+    padding: 3em;
+    text-align: center;
+    margin-top: -450px;
+    position: absolute;
+    z-index: 5;
+    width: 1100px;
+    @media @ABTtablet{
+    width: 100%;
+    padding: 20px;
+    }
+
+    .aboutBoxTop{
+      display: flex;
+      flex-direction: column;
+      @media @ABTtablet{
+        justify-content: center;
+        width: 100%;
+        }
+      
+    }
+    h2 {
+      padding: 10px 0 0 0;
+      font-size: 4rem;
+      text-align: left
+    }
+    p {
+      padding-bottom: 40px;
+      text-align: left;
+    }
+  }
+  .aboutMidBox{
+    display: flex;
+    flex-direction: row;
+    padding-right: 0px;
+    @media @ABTtablet{
+      flex-direction: column;
+      width: 100%;
+    }
+    .reportCard{
+      width: 30%;
+      margin-right: 20px;
+      @media @ABTtablet{
+        width: 100%;
+        margin-bottom: 60px;
+      }
+      h3{
+        font-size: 3rem;
+        text-align: left;
+        margin-bottom: 10px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+      }
+    }
+    .aboutImg{
+      width: 65%;
+      margin-left: 20px;
+      height: 500px;
+      @media @ABTtablet{
+        width: 100%;
+        margin-left: 0;
+        height: 30%;
+      }
+      }
+    }
+  
+
+  
+/* Style the buttons that are used to open and close the accordion panel */
+.reportCard{
+  display: flex;
+  flex-direction: column;
+  button{
+    font-size: 2.5rem;
+    border-bottom: 2px solid;
+  }
+}
+.gradeCard {
+  width: 50%;
+  background-color: @porcelain;
+  color: #444;
+  cursor: pointer;
+  padding: 18px 18px 18px 0px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .gradeCard:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  text-align: left;
+  padding-top: 20px;
+}
+
+.aboutBottomBox{
+  display: flex;
+  flex-direction: row;
+  @media @ABTtablet{
+    width: 100%;
+  }
+}
+
+.aboutBottomBox{
+  padding-top: 60px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .row1{
+    display: flex;
+    flex-direction: row;
+    height: 33%;
+    h2{
+      margin-left: 20px;
+      width: 80%;
+    }
+    
+  }
+  .row2{
+    display: flex;
+    flex-direction: row;
+    height: 33%;
+    h2{
+      margin-left: 20px;
+      width: 60%;
+    }
+  }
+  .block1{
+    background: @licorice;
+    height: 100%;
+    width: 20%;
+    align-self: flex-start;
+    @media @ABTtablet{
+      width: 40%;
+    }
+  }
+  .block2{
+    background: @licorice;
+    height: 100%;
+    width: 40%;
+    align-self: flex-start;
+    @media @ABTtablet{
+    width: 100%;
+    }
+  }
+  .block3{
+    background: @licorice;
+    height: 33%;
+    width: 60%;
+    align-self: flex-start;
+    @media @ABTtablet{
+      width: 100%;
+    }
+  }
+}
