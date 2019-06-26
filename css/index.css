@@ -164,7 +164,7 @@ img {
   margin: 0 auto;
 }
 #header {
-  background-color: #f1f1f1;
+  background: #fcec4f;
 }
 #header nav {
   display: flex;
@@ -175,14 +175,17 @@ img {
 #header a {
   text-decoration: none;
   text-align: center;
-  color: grey;
-  padding: 25px;
+  color: #0d0221;
+  padding: 15px;
   font-size: 14px;
+}
+#header a:hover {
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.13);
 }
 .banner {
   flex: flex;
   flex-direction: column;
-  background-color: #f1f1f1;
+  background: #fcec4f;
   height: 640px;
   padding-top: 70px;
 }
@@ -197,10 +200,12 @@ img {
 .banner h1 {
   padding-top: 20px;
   padding-bottom: 30px;
+  font-weight: 600;
 }
 .banner p {
   padding-bottom: 30px;
-  font-size: 18px;
+  font-size: 20px;
+  letter-spacing: 0.5px;
 }
 .banner .circle-wrap {
   position: relative;
@@ -215,12 +220,14 @@ img {
   top: 20%;
   left: 50%;
   transform: translate(-50%);
+  color: white;
+  font-weight: 500;
 }
 .banner .radial-progress {
   display: inline-block;
   width: 200px;
   height: 200px;
-  background: #c9c9c9;
+  background: #DDDDDD;
   border-radius: 50%;
 }
 .banner .radial-progress .circle .mask,
@@ -246,15 +253,15 @@ img {
 }
 .banner .radial-progress .circle .mask .fill {
   clip: rect(0px, 100px, 200px, 0px);
-  background-color: #4e9732;
+  background: #2ECC40;
 }
 .banner .radial-progress .inset {
-  width: 175px;
-  height: 175px;
+  width: 165px;
+  height: 165px;
   position: absolute;
-  margin-left: 12.5px;
-  margin-top: 12.5px;
-  background-color: #fbfbfb;
+  margin-left: 17.5px;
+  margin-top: 17.5px;
+  background: #0d0221;
   border-radius: 50%;
   box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
 }
