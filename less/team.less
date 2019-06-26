@@ -1,3 +1,4 @@
+
 h2 {
   color: black;
 }
@@ -5,9 +6,7 @@ p {
   color: black;
 }
 
-body {
-  background: rgb(252, 236, 79);
-}
+
 
 header {
   background: rgb(252, 236, 79);
@@ -19,10 +18,12 @@ header:hover {
 
 .bannerWelcome {
   margin-top: 0px;
+  padding-top: 2rem;
+  background-color: rgb(252, 236, 79);
   h2 {
     text-align: center;
     color: black;
-    margin: 1rem 0 2rem 0;
+    margin: 0 0 2rem 0;
     font-size: 3rem;
     @media @phone {
       color: black;
@@ -39,13 +40,13 @@ header:hover {
     display: flex;
     justify-content: center;
     padding-top: 1.8rem;
+
   }
   .tabs-item {
     display: none;
     width: 75%;
     color: black;
     // @media @change {
-    //   color: black;
     //   margin-top: 0px;
     //}
     // @media @phone {
@@ -70,38 +71,29 @@ header:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    background: white;
     @media @phone {}
   }
 
   .tabs-links {
     display: flex;
-    max-width: 800px;
-    margin: .5rem auto;
+    // max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0;
     text-align: center;
     justify-content: space-around;
+    background-color: rgb(252, 236, 79);
+    transform: translate(0px, -21px);
+
 
     @media @phone {
       flex-direction: column;
-      margin: 0 1rem;
+      // margin: 0 1rem;
       background-color: none;
       color: black;
+      width: 100%;
+      padding-bottom: 0;
     }
-  }
-
-  .bannerImage {
-    img {
-      max-width: 100%;
-      max-height: 402px;
-      display: block;
-      margin: -250px auto 0 auto;
-      position: relative;
-      z-index: -1;
-      @media @phone {
-        height: 350px;
-        margin-top: -326px;
-      }
-    }
-
   }
 
   .tabs-link {
@@ -139,7 +131,7 @@ header:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    // background: white;
+    background: white;
     max-width: 500px;
     h2 {
       font-size: 2.4rem;

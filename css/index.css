@@ -637,9 +637,6 @@ h2 {
 p {
   color: black;
 }
-body {
-  background: #fcec4f;
-}
 header {
   background: #fcec4f;
 }
@@ -648,11 +645,13 @@ header:hover {
 }
 .bannerWelcome {
   margin-top: 0px;
+  padding-top: 2rem;
+  background-color: #fcec4f;
 }
 .bannerWelcome h2 {
   text-align: center;
   color: black;
-  margin: 1rem 0 2rem 0;
+  margin: 0 0 2rem 0;
   font-size: 3rem;
 }
 @media (max-width:500px) {
@@ -699,16 +698,21 @@ header:hover {
   -ms-flex-align: center;
   align-items: center;
   text-align: center;
+  background: white;
 }
 .tabs .tabs-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 800px;
-  margin: 0.5rem auto;
+  margin: 0 auto;
+  padding: 2rem 0;
   text-align: center;
   -ms-flex-pack: distribute;
   justify-content: space-around;
+  background-color: #fcec4f;
+  -webkit-transform: translate(0px, -21px);
+  -ms-transform: translate(0px, -21px);
+  transform: translate(0px, -21px);
 }
 @media (max-width:500px) {
   .tabs .tabs-links {
@@ -716,23 +720,10 @@ header:hover {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    margin: 0 1rem;
     background-color: none;
     color: black;
-  }
-}
-.tabs .bannerImage img {
-  max-width: 100%;
-  max-height: 402px;
-  display: block;
-  margin: -250px auto 0 auto;
-  position: relative;
-  z-index: -1;
-}
-@media (max-width:500px) {
-  .tabs .bannerImage img {
-    height: 350px;
-    margin-top: -326px;
+    width: 100%;
+    padding-bottom: 0;
   }
 }
 .tabs .tabs-link {
@@ -774,6 +765,7 @@ header:hover {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  background: white;
   max-width: 500px;
 }
 .tabs .profile h2 {
