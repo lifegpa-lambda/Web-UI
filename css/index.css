@@ -167,55 +167,79 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-#header-home {
+#header-main {
   background: #fcec4f;
 }
-#header-home nav {
+#header-main nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 60px;
+  height: 100px;
 }
-#header-home a {
+#header-main nav a {
   text-decoration: none;
   text-align: center;
   color: #0d0221;
   padding: 15px;
   font-size: 14px;
+  margin: 30px;
+  margin-top: 60px;
 }
-#header-home a:hover {
+#header-main nav a:hover {
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.13);
 }
-.banner {
-  flex: flex;
-  flex-direction: column;
-  background: #fcec4f;
-  height: 640px;
-  padding-top: 70px;
+#header-main nav #id-btn {
+  padding: 15px;
+  width: 120px;
+  background: #2e72b9;
+  color: white;
 }
-.banner img {
-  border: 1px solid black;
+#header-main nav #logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  margin: 0 auto;
+  margin-left: 60px;
+  position: relative;
 }
-.banner .title::after {
+#header-main nav #logo .title {
+  font-size: 16px;
+  padding-bottom: 10px;
+  bottom: 0px;
+  left: 80px;
+  position: absolute;
+}
+#header-main nav #logo .title::after {
   content: attr(data-end);
   font-size: 12px;
   padding-left: 2px;
 }
+#header-main nav:hover {
+  background: white;
+}
+.banner {
+  display: flex;
+  flex-direction: column;
+  background: #fcec4f;
+  height: 640px;
+  padding-top: 70px;
+  z-index: 3;
+}
 .banner h1 {
-  padding-top: 20px;
-  padding-bottom: 30px;
+  font-size: 40px;
   font-weight: 600;
+  line-height: 1.4;
 }
 .banner p {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
+  padding-top: 20px;
   font-size: 20px;
-  letter-spacing: 0.5px;
 }
 .banner .circle-wrap {
   position: relative;
 }
 .banner .text {
-  font-size: 25px;
+  font-size: 35px;
   line-height: 2.5;
   letter-spacing: 1px;
   position: absolute;
@@ -224,26 +248,26 @@ img {
   top: 20%;
   left: 50%;
   transform: translate(-50%);
-  color: white;
-  font-weight: 500;
+  color: #0d0221;
+  font-weight: 600;
 }
 .banner .radial-progress {
   display: inline-block;
-  width: 200px;
-  height: 200px;
-  background: #DDDDDD;
+  width: 300px;
+  height: 300px;
+  background: #cdd2d0;
   border-radius: 50%;
 }
 .banner .radial-progress .circle .mask,
 .banner .radial-progress .circle .fill,
 .banner .radial-progress .circle .shadow {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   position: absolute;
   border-radius: 50%;
 }
 .banner .radial-progress .circle .shadow {
-  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1) inset;
 }
 .banner .radial-progress .circle .mask,
 .banner .radial-progress .circle .fill {
@@ -253,21 +277,22 @@ img {
   transition: transform 2s;
 }
 .banner .radial-progress .circle .mask {
-  clip: rect(0px, 200px, 200px, 100px);
+  clip: rect(0px, 300px, 300px, 150px);
 }
 .banner .radial-progress .circle .mask .fill {
-  clip: rect(0px, 100px, 200px, 0px);
-  background: #2ECC40;
+  clip: rect(0px, 150px, 300px, 0px);
+  background: #2e72b9;
 }
 .banner .radial-progress .inset {
-  width: 165px;
-  height: 165px;
+  width: 260px;
+  height: 260px;
   position: absolute;
-  margin-left: 17.5px;
-  margin-top: 17.5px;
-  background: #0d0221;
+  margin-left: 20px;
+  margin-top: 20px;
+  background: #cdd2d0;
+  opacity: 0.9;
   border-radius: 50%;
-  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.8);
 }
 .main {
   display: flex;
@@ -535,22 +560,54 @@ aboutNav {
   }
 }
 #header {
-  max-width: 400px;
-  margin: 0 auto 2rem auto;
+  background: #fcec4f;
 }
-#header ul {
+#header nav {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100px;
 }
-@media (max-width:500px) {
-  #header ul {
-    justify-content: center;
-  }
+#header nav a {
+  text-decoration: none;
+  text-align: center;
+  color: #0d0221;
+  padding: 15px;
+  font-size: 14px;
+  margin: 30px;
+  margin-top: 60px;
 }
-#header ul li {
-  padding: 1rem;
-  font-size: 1.8rem;
+#header nav a:hover {
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.13);
+}
+#header nav #id-btn {
+  padding: 15px;
+  width: 120px;
+  background: #2e72b9;
   color: white;
+}
+#header nav #logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  margin: 0 auto;
+  margin-left: 60px;
+  position: relative;
+}
+#header nav #logo .title {
+  font-size: 16px;
+  padding-bottom: 10px;
+  bottom: 0px;
+  left: 80px;
+  position: absolute;
+}
+#header nav #logo .title::after {
+  content: attr(data-end);
+  font-size: 12px;
+  padding-left: 2px;
+}
+#header nav:hover {
+  background: white;
 }
 h2 {
   color: black;
