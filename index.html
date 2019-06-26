@@ -6,7 +6,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="main.js"></script>
   </head>
@@ -14,52 +13,60 @@
     <div id="container">
 
       <!--HEADER-->
-      <header id="header-main">
-          <div class="nav-bar">
-            <nav>
-              <div id="logo">
-                <img id="img" src="assets/logo.png"/>
-                <div class="title" data-end="TM">LifeGPA</div>
-              </div>
-              <div class="headerLinks">
-                <a href="index.html">HOME</a>
-                <a href="about.html">ABOUT</a>
-                <a href="team.html">TEAM</a>
-                <a id="id-btn" href="https://lifegpa-app.netlify.com/login">LOGIN</a>
-              </div>
-            </nav>
-          </div>
-        </header>
+      <header id="header-home">
+        <div class="nav-bar">
+          <nav>
+            <a href="">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="team.html">TEAM</a>
+            <a href="">SIGN UP</a>
+          </nav>
+        </div>
+      </header>
 
       <!--BANNER-->
       <section class="banner">
-        <h1>If You Gave Your Life A Grade<br> Right Now<br> What Would It Be?</h1>
-        <p>Summarize Your Life's Most Important Efforts Into a Simple Composite Number.</p>
+        <img src="assets/logo.png"/>
+        <div class="title">
+        <h1 class="title" data-end="TM">LifeGPA</h1>
+        </div>
+        <p>Summarize your life's most important efforts into a simple composite number.</p>
         <div class="circle-wrap">
-          <div class="text">LGPA<br><span id="gpa"></span>
+          <div class="text">LGPA<br><span id="gpa"></span><span>%</span>
           </div>
           <div class="radial-progress">
-            <div class="circle">
-                <div class="mask full">
-                    <div class="fill"></div>
-                </div>
-                <div class="mask half">
-                    <div class="fill"></div>
-                    <div class="fill fix"></div>
-                </div>
-                <div class="shadow"></div>
-            </div>
-            <div class="inset"></div>
-           </div>
-         </div>
+              <div class="circle">
+                  <div class="mask full">
+                      <div class="fill"></div>
+                  </div>
+                  <div class="mask half">
+                      <div class="fill"></div>
+                      <div class="fill fix"></div>
+                  </div>
+                  <div class="shadow"></div>
+              </div>
+              <div class="inset"></div>
+          </div>
+        </div>
+      </section>
+
+      <!--MAIN-->
+      <section class="main">
+
+        <div class="box">
+            <button>GET STARTED</button>
+            <button>LEARN MORE</button>
+        </div>
+
       </section>
 
       <!--FOOTER-->
-      <footer id="footer-main">
+      <footer id="footer">
           <ul>
-            <a href="#" class="fa fa-linkedin"></a>
-            <a href="#" class="fa fa-github"></a>
-            <a href="#" class="fa fa-twitter"></a>
+            <li>Twitter</li>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>GitHub</li>
           </ul>
       </footer>
     </div>
