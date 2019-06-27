@@ -29,6 +29,7 @@ header:hover {
     font-size: 3rem;
     @media @phone {
       color: black;
+      padding-top: 100px;
     }
   }
 }
@@ -158,11 +159,8 @@ header:hover {
     height: auto;
   }
 }
-
-
-
-// header
-// NAVIGATION
+/*
+// NAVIGATION Greg
 #header {
   background: rgb(252, 236, 79);
   @media @phone {
@@ -228,5 +226,89 @@ header:hover {
 
   p {
     font-size: 2.4rem;
+  }
+}
+*/
+
+// NAVIGATION
+#header-main {
+  background: rgb(252, 236, 79);
+  @media @phone {
+    max-width: 100%;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    @media @phone {
+      flex-direction: column;
+
+    }
+
+    #logo {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      transform: translate(0px, 4px);
+      margin-left: 60px;
+      @media @phone {
+        margin-left: 0px;
+        justify-items: flex-start;
+
+      }
+      img {
+        transform: translate(0px, -21px);
+      }
+      .title {
+        font-size: 24px;
+        font-weight: 500;
+      }
+      .title::after {
+        content: attr(data-end);
+        font-size: 12px;
+        padding-left: 2px;
+      }
+    }
+    .headerLinks {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      margin-right: 60px;
+      height: 70px;
+      @media @phone {
+        flex-direction: column;
+        // margin-top: -25px;
+        margin-top: 20px;
+        margin-right: 0px;
+        margin-left: 0px;
+        padding: 0;
+      }
+      a {
+        text-decoration: none;
+        text-align: center;
+        color: #0d0221;
+        padding: 20px;
+        font-size: 14px;
+        margin: 10px;
+        @media @phone {
+          padding: 0;
+        }
+      }
+      a:hover {
+        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.13);
+      }
+      #id-btn {
+        height: 50px;
+        width: 120px;
+        background: rgb(46, 114, 185);
+        color: white;
+        flex-grow: 2;
+      }
+    }
+  }
+  nav:hover {
+    background: white;
   }
 }

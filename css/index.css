@@ -772,6 +772,7 @@ header:hover {
 @media (max-width:500px) {
   .bannerWelcome h2 {
     color: black;
+    padding-top: 100px;
   }
 }
 .tabs {
@@ -902,15 +903,85 @@ header:hover {
   width: 90%;
   height: auto;
 }
+/*
+// NAVIGATION Greg
 #header {
+  background: rgb(252, 236, 79);
+  @media @phone {
+    max-width: 100%;
+  }
+  // border: 1px solid black;
+
+  .nav-bar {
+    // border: 1px solid black;
+    // display: flex;
+    // justify-content: space-between;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media @phone {
+      flex-direction: column;
+    }
+    // height: 100px;
+    // border: 1px solid black;
+  }
+  nav:hover {
+    background: white;
+  }
+
+  .headerLinks {
+    // border: 1px solid black;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    @media @phone {
+      flex-direction: column;
+      margin-top: -25px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    // border: 1px solid black;
+    color: #0d0221;
+    font-size: 1.6rem;
+    padding: 0 1.5rem;
+    // border: 1px solid black;
+  }
+  a:hover {
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.13);
+  }
+
+  #logo {
+    // border: 1px solid black;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    transform: translate(0px, 4px);
+    img {
+      // border: 1px solid black;
+      transform: translate(0px, -21px);
+
+    }
+  }
+
+  p {
+    font-size: 2.4rem;
+  }
+}
+*/
+#header-main {
   background: #fcec4f;
 }
 @media (max-width:500px) {
-  #header {
+  #header-main {
     max-width: 100%;
   }
 }
-#header nav {
+#header-main nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -920,46 +991,17 @@ header:hover {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  height: 100px;
 }
 @media (max-width:500px) {
-  #header nav {
+  #header-main nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
   }
 }
-#header nav:hover {
-  background: white;
-}
-#header .headerLinks {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 70px;
-}
-@media (max-width:500px) {
-  #header .headerLinks {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    margin-top: -25px;
-  }
-}
-#header a {
-  text-decoration: none;
-  color: #0d0221;
-  font-size: 1.6rem;
-  padding: 0 1.5rem;
-}
-#header a:hover {
-  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.13);
-}
-#header #logo {
+#header-main nav #logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -973,12 +1015,77 @@ header:hover {
   -webkit-transform: translate(0px, 4px);
   -ms-transform: translate(0px, 4px);
   transform: translate(0px, 4px);
+  margin-left: 60px;
 }
-#header #logo img {
+@media (max-width:500px) {
+  #header-main nav #logo {
+    margin-left: 0px;
+    justify-items: flex-start;
+  }
+}
+#header-main nav #logo img {
   -webkit-transform: translate(0px, -21px);
   -ms-transform: translate(0px, -21px);
   transform: translate(0px, -21px);
 }
-#header p {
-  font-size: 2.4rem;
+#header-main nav #logo .title {
+  font-size: 24px;
+  font-weight: 500;
+}
+#header-main nav #logo .title::after {
+  content: attr(data-end);
+  font-size: 12px;
+  padding-left: 2px;
+}
+#header-main nav .headerLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-right: 60px;
+  height: 70px;
+}
+@media (max-width:500px) {
+  #header-main nav .headerLinks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 0;
+  }
+}
+#header-main nav .headerLinks a {
+  text-decoration: none;
+  text-align: center;
+  color: #0d0221;
+  padding: 20px;
+  font-size: 14px;
+  margin: 10px;
+}
+@media (max-width:500px) {
+  #header-main nav .headerLinks a {
+    padding: 0;
+  }
+}
+#header-main nav .headerLinks a:hover {
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.13);
+}
+#header-main nav .headerLinks #id-btn {
+  height: 50px;
+  width: 120px;
+  background: #2e72b9;
+  color: white;
+  -webkit-box-flex: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+}
+#header-main nav:hover {
+  background: white;
 }
