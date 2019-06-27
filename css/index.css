@@ -268,6 +268,10 @@ img {
   background: #2e72b9;
   color: white;
   flex-grow: 2;
+  transition: background 600ms;
+}
+#header-main nav .headerLinks #id-btn:hover {
+  background: #28464d;
 }
 #header-main nav:hover {
   background: white;
@@ -377,11 +381,19 @@ img {
   border: transparent;
   background: #cdd2d0;
   margin-top: 20px;
+  transition: background 600ms;
 }
 @media (max-width:500px) {
   .banner .home-content .learn-btn {
     margin-top: 5px;
   }
+}
+.banner .home-content .learn-btn:focus {
+  outline: 0;
+}
+.banner .home-content .learn-btn:hover {
+  color: white;
+  background: #28464d;
 }
 .banner .circle-wrap {
   position: relative;
@@ -485,6 +497,14 @@ img {
   text-decoration: none;
   margin-top: 15px;
   color: black;
+}
+#footer-main .footer-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer-main .footer-bottom p {
+  margin: 0 20px 0 20px;
 }
 body {
   font-size: 62.5%;

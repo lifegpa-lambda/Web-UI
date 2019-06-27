@@ -91,6 +91,10 @@
         background: rgb(46, 114, 185);
         color: white;
         flex-grow: 2;
+        transition: background 600ms;
+      }
+      #id-btn:hover {
+        background: rgb(40, 70, 77)
       }
     }
   }
@@ -194,9 +198,15 @@
       border: transparent;
       background:rgb(205, 210, 208);
       margin-top: 20px;
+      transition: background 600ms;
       @media @phone {
         margin-top: 5px;
       }
+    }
+    .learn-btn:focus {outline:0;}
+    .learn-btn:hover {
+      color:white;
+      background: rgb(40, 70, 77);
     }
   }
 
@@ -299,4 +309,14 @@
     margin-top: 15px;
     color: black;
   }
+  .footer-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    p {
+      margin: 0 20px 0 20px;
+
+  }
+}
 }
