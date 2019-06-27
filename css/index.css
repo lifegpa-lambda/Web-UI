@@ -1142,6 +1142,7 @@ header:hover {
   -ms-flex-align: center;
   align-items: center;
   height: 100px;
+  background-color: #fcec4f;
 }
 @media (max-width:500px) {
   #header-main nav {
@@ -1312,12 +1313,13 @@ header:hover {
 .menu-open {
   height: 50px;
 }
-FOOTER #footer-main {
+#footerTeam {
   bottom: 0;
-  margin-bottom: 0px;
+  margin: 250px auto 0 auto;
+  text-align: center;
   height: 80px;
 }
-FOOTER #footer-main a {
+#footerTeam a {
   display: inline-block;
   padding: 20px;
   font-size: 20px;
