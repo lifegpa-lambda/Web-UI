@@ -6,67 +6,75 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="main.js"></script>
+    <script src="main.js" async></script>
+    <script src="menuMobile.js" async></script>
   </head>
   <body class="">
     <div id="container">
 
       <!--HEADER-->
-      <header id="header-home">
-        <div class="nav-bar">
-          <nav>
-            <a href="">HOME</a>
+      <header id="header-main">
+          <div class="nav-bar">
+            <nav>
+              <div id="logo">
+                <img id="img" src="assets/logo.png"/>
+                <div class="title" data-end="TM">LifeGPA</div>
+              </div>
+              <div class="menu-button">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+              </div>
+              <div class="headerLinks">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="team.html">TEAM</a>
+                <a id="id-btn" href="https://lifegpa-app.netlify.com/login">LOGIN</a>
+              </div>
+            </nav>
+          </div>
+        </header>
+        <div class="menu">
+            <a href="index.html">HOME</a>
             <a href="about.html">ABOUT</a>
             <a href="team.html">TEAM</a>
-            <a href="">SIGN UP</a>
-          </nav>
+            <a class="mobile-login" href="team.html">LOGIN</a>
         </div>
-      </header>
 
       <!--BANNER-->
       <section class="banner">
-        <img src="assets/logo.png"/>
-        <div class="title">
-        <h1 class="title" data-end="TM">LifeGPA</h1>
+        <div class="home-content">
+          <h1>If You Gave Your Life A Grade<br> Right Now<br> What Would It Be?</h1>
+          <p>Summarize Your Life's Most Important Efforts<br> Into a Simple Composite Number.</p>
+          <button class="learn-btn">GET STARTED</button>
         </div>
-        <p>Summarize your life's most important efforts into a simple composite number.</p>
         <div class="circle-wrap">
-          <div class="text">LGPA<br><span id="gpa"></span><span>%</span>
+          <div class="text">LifeGPA<br><span id="gpa"></span>
           </div>
           <div class="radial-progress">
-              <div class="circle">
-                  <div class="mask full">
-                      <div class="fill"></div>
-                  </div>
-                  <div class="mask half">
-                      <div class="fill"></div>
-                      <div class="fill fix"></div>
-                  </div>
-                  <div class="shadow"></div>
-              </div>
-              <div class="inset"></div>
-          </div>
-        </div>
-      </section>
-
-      <!--MAIN-->
-      <section class="main">
-
-        <div class="box">
-            <button>GET STARTED</button>
-            <button>LEARN MORE</button>
-        </div>
-
+            <div class="circle">
+                <div class="mask full">
+                    <div class="fill"></div>
+                </div>
+                <div class="mask half">
+                    <div class="fill"></div>
+                    <div class="fill fix"></div>
+                </div>
+                <div class="shadow"></div>
+            </div>
+            <div class="inset"></div>
+           </div>
+         </div>
       </section>
 
       <!--FOOTER-->
-      <footer id="footer">
+      <footer id="footer-main">
           <ul>
-            <li>Twitter</li>
-            <li>Facebook</li>
-            <li>Instagram</li>
-            <li>GitHub</li>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-github"></a>
+            <a href="#" class="fa fa-twitter"></a>
           </ul>
       </footer>
     </div>
