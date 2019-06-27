@@ -248,7 +248,7 @@ img {
 #header-main nav .headerLinks a {
   text-decoration: none;
   text-align: center;
-  color: #0d0221;
+  color: #1d2c2f;
   padding: 20px;
   font-size: 14px;
   font-weight: 500;
@@ -287,7 +287,7 @@ img {
   padding: 15px;
   font-size: 14px;
   font-weight: 500;
-  color: #0d0221;
+  color: #1d2c2f;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -364,6 +364,7 @@ img {
   padding-bottom: 20px;
   padding-top: 30px;
   font-size: 20px;
+  color: #1d2c2f;
 }
 @media (max-width:500px) {
   .banner .home-content p {
@@ -378,6 +379,7 @@ img {
   padding: 15px;
   font-size: 16px;
   font-weight: 600;
+  color: #1d2c2f;
   border: transparent;
   background: #cdd2d0;
   margin-top: 20px;
@@ -422,7 +424,7 @@ img {
   top: 28%;
   left: 45%;
   transform: translate(-50%);
-  color: #0d0221;
+  color: #1d2c2f;
   font-weight: 600;
 }
 @media (max-width: 800px) {
@@ -440,6 +442,9 @@ img {
     left: 50%;
     transform: translate(-50%);
   }
+}
+.banner .text #gpa {
+  color: #1d2c2f;
 }
 .banner .radial-progress {
   display: inline-block;
@@ -479,8 +484,7 @@ img {
   position: absolute;
   margin-left: 20px;
   margin-top: 20px;
-  background: #cdd2d0;
-  opacity: 0.9;
+  background-image: url("../assets/background3.jpg");
   border-radius: 50%;
   box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.8);
 }
@@ -496,7 +500,7 @@ img {
   width: 50px;
   text-decoration: none;
   margin-top: 15px;
-  color: black;
+  color: #1d2c2f;
 }
 #footer-main .footer-bottom {
   display: flex;
@@ -505,6 +509,7 @@ img {
 }
 #footer-main .footer-bottom p {
   margin: 0 20px 0 20px;
+  color: #1d2c2f;
 }
 body {
   font-size: 62.5%;
