@@ -687,6 +687,9 @@ body {
     width: 100%;
   }
 }
+.aboutBox .aboutBoxTop p {
+  margin-top: 10px;
+}
 .aboutBox h2 {
   font-family: 'Playfair Display', serif;
   padding: 10px 0 0 0;
@@ -919,14 +922,28 @@ h2 {
 p {
   color: black;
 }
+header {
+  background: #fcec4f;
+}
+header:hover {
+  background-color: white;
+}
 .bannerWelcome {
   margin-top: 0px;
+  padding-top: 2rem;
+  background-color: #fcec4f;
 }
 .bannerWelcome h2 {
   text-align: center;
-  color: white;
-  margin: 1rem 0 2rem 0;
+  color: black;
+  margin: 0 0 2rem 0;
   font-size: 3rem;
+}
+@media (max-width:500px) {
+  .bannerWelcome h2 {
+    color: black;
+    padding-top: 100px;
+  }
 }
 .tabs {
   width: 100%;
@@ -937,23 +954,22 @@ p {
   display: flex;
   justify-content: center;
   padding-top: 1.8rem;
+  z-index: -2;
 }
 .tabs .tabs-item {
   display: none;
   width: 75%;
-  margin-top: -60px;
-  color: white;
-}
-@media (max-width: 570px) {
-  .tabs .tabs-item {
-    color: black;
-    margin-top: 0px;
-  }
+  color: black;
 }
 .tabs .tabs-item .tabs-item-title {
   font-size: 3rem;
   font-weight: bold;
   padding-bottom: 10px;
+}
+@media (max-width:500px) {
+  .tabs .tabs-item .tabs-item-title {
+    z-index: -2;
+  }
 }
 .tabs .tabs-item .uiDevs .profile {
   margin-bottom: 2rem;
@@ -963,52 +979,52 @@ p {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background: white;
+}
+@media (max-width:500px) {
+  .tabs .tabs-item-selected {
+    z-index: -2;
+  }
 }
 .tabs .tabs-links {
   display: flex;
-  max-width: 800px;
-  margin: 0.5rem auto;
+  margin: 0 auto;
+  padding: 2rem 0;
   text-align: center;
   justify-content: space-around;
+  background-color: #fcec4f;
+  transform: translate(0px, -21px);
 }
 @media (max-width:500px) {
   .tabs .tabs-links {
     flex-direction: column;
-    margin: 0 1rem;
     background-color: none;
-    color: white;
-  }
-}
-.tabs .bannerImage img {
-  max-width: 100%;
-  max-height: 402px;
-  display: block;
-  margin: -250px auto 0 auto;
-  position: relative;
-  z-index: -1;
-}
-@media (max-width:500px) {
-  .tabs .bannerImage img {
-    height: 350px;
-    margin-top: -316px;
+    color: black;
+    width: 100%;
+    padding-bottom: 0;
+    z-index: -2;
   }
 }
 .tabs .tabs-link {
   padding: 15px 20px;
-  font-size: 2.4rem;
-  border: 1px solid white;
+  font-size: 2rem;
+  border: 1px solid black;
   border-radius: 10px;
-  color: white;
+  color: black;
   cursor: pointer;
+}
+.tabs .tabs-link:hover {
+  background-color: white;
 }
 @media (max-width:500px) {
   .tabs .tabs-link {
     text-align: center;
     font-size: 2rem;
     border-radius: 0;
-    border: 1px solid white;
+    border: 1px solid black;
     background-color: none;
-    color: white;
+    color: black;
+    z-index: -1;
   }
 }
 .tabs .tabs-link-selected {
@@ -1022,6 +1038,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: white;
   max-width: 500px;
 }
 .tabs .profile h2 {
@@ -1042,4 +1059,169 @@ p {
 .tabs .gitLogo {
   width: 90%;
   height: auto;
+}
+#header-main {
+  background: #fcec4f;
+}
+@media (max-width:500px) {
+  #header-main {
+    max-width: 100%;
+    z-index: 2;
+  }
+}
+#header-main nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  background-color: #fcec4f;
+}
+@media (max-width:500px) {
+  #header-main nav {
+    z-index: 2;
+    flex-direction: row-reverse;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    background-color: #fcec4f;
+  }
+}
+#header-main nav #logo {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  transform: translate(0px, 4px);
+  margin-left: 60px;
+}
+@media (max-width:500px) {
+  #header-main nav #logo {
+    margin-left: 0px;
+    justify-items: flex-start;
+  }
+}
+#header-main nav #logo img {
+  transform: translate(0px, -21px);
+}
+#header-main nav #logo .title {
+  font-size: 24px;
+  font-weight: 500;
+}
+#header-main nav #logo .title::after {
+  content: attr(data-end);
+  font-size: 12px;
+  padding-left: 2px;
+}
+#header-main nav .menu-button .line {
+  width: 35px;
+  height: 5px;
+  background-color: #2e72b9;
+  margin: 6px 0;
+  display: none;
+}
+@media (max-width:500px) {
+  #header-main nav .menu-button .line {
+    display: block;
+  }
+}
+#header-main nav .headerLinks {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-right: 60px;
+  height: 70px;
+}
+@media (max-width:500px) {
+  #header-main nav .headerLinks {
+    flex-direction: column;
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 0;
+    display: none;
+  }
+}
+#header-main nav .headerLinks a {
+  text-decoration: none;
+  text-align: center;
+  color: #0d0221;
+  padding: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 10px;
+}
+@media (max-width:500px) {
+  #header-main nav .headerLinks a {
+    padding: 0;
+  }
+}
+#header-main nav .headerLinks a:hover {
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.13);
+}
+#header-main nav .headerLinks #id-btn {
+  height: 50px;
+  width: 120px;
+  background: #2e72b9;
+  color: white;
+  flex-grow: 2;
+}
+#header-main nav:hover {
+  background: white;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  display: none;
+}
+.menu a {
+  text-decoration: none;
+  padding: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #0d0221;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.menu .mobile-login {
+  background: #2e72b9;
+  padding: 10px;
+  height: 35px;
+  color: white;
+}
+@media (max-width:500px) {
+  .menu {
+    display: flex;
+    position: fixed;
+    text-align: left;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    background-color: #fcec4f;
+    border-left: none;
+    border-bottom: none;
+    margin: 0 0 0 0;
+    transition: height 1000ms;
+  }
+}
+.menu-open {
+  height: 50px;
+}
+#footerTeam {
+  bottom: 0;
+  margin: 30px auto 0 auto;
+  text-align: center;
+  height: 80px;
+}
+#footerTeam a {
+  display: inline-block;
+  padding: 20px;
+  font-size: 20px;
+  width: 50px;
+  text-decoration: none;
+  margin-top: 15px;
+  color: black;
 }

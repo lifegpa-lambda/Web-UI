@@ -3,22 +3,43 @@
 	<head>
 		<title>Meet the Team</title>
 		<link rel="stylesheet" href="./CSS/index.css">
+		<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="JS\main.js" async></script>
+		<script src="menuMobile.js" async></script>
 	</head>
 	<body>
-		<script defer="defer" src="JS\about.js"></script>
-
-		<header id='header'>
-			<ul>
-				<li>Home</li>
-				<li>About</li>
-				<li>Our Team</li>
-				<li><a href="#" class="button">Sign Up</a></li>
-			</ul>
-		</header>
+		<header id="header-main">
+				<div class="nav-bar">
+					<nav>
+						<div id="logo">
+							<img id="img" src="assets/logo.png"/>
+							<div class="title" data-end="TM">LifeGPA</div>
+						</div>
+						<div class="menu-button">
+							<div class="line"></div>
+							<div class="line"></div>
+							<div class="line"></div>
+						</div>
+						<div class="headerLinks">
+							<a href="index.html">HOME</a>
+							<a href="about.html">ABOUT</a>
+							<a href="team.html">TEAM</a>
+							<a id="id-btn" href="https://lifegpa-app.netlify.com/login">LOGIN</a>
+						</div>
+					</nav>
+				</div>
+			</header>
+			<div class="menu">
+					<a href="index.html">HOME</a>
+					<a href="about.html">ABOUT</a>
+					<a href="team.html">TEAM</a>
+					<a class="mobile-login" href="team.html">LOGIN</a>
+			</div>
 		<div class="bannerWelcome">
 			<h2>Meet the Team</h2>
 		</div>
-
 		<div class="section">
 				<div class="tabs">
 					<div class="tabs-links">
@@ -27,15 +48,21 @@
 						<div class="tabs-link" data-tab="3">Front End</div>
 						<div class="tabs-link" data-tab="4">Back End</div>
 					</div>
-					<div class="bannerImage"><img src="imgs\banner.jpg" alt="banner"></div>
 					<div class="tabs-items">
 						<div class="tabs-item tabs-item-selected" data-tab="1">
 							<div class="tabs-item-title">Team Lead</div>
 							<div class="profile">
 								<h2>Chance Embrey-Farquhar</h2>
 								<img src="imgs\chance.PNG" alt="Chance">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam quisquam error debitis mollitia necessitatibus obcaecati odio, vel hic quae ut.</p>
+								<p>WEB17 Project Team Lead, Chance survived entirely on Bitcoin for a week in 2017.</p>
 								<a href="https://github.com/cembreyfarquhar" target="_blank"> <img class="gitLogo" src="imgs\github_logo.png" alt="GitHub Logo linking to GitHub Page" onclick=""></a>
+								<div id="footerTeam">
+										<ul>
+											<a href="#" class="fa fa-linkedin"></a>
+											<a href="#" class="fa fa-github"></a>
+											<a href="#" class="fa fa-twitter"></a>
+										</ul>
+								</div>
 							</div>
 						</div>
 						<div class="tabs-item" data-tab="2">
@@ -45,7 +72,7 @@
 								<div class="profile">
 									<h2>Madelin Strange</h2>
 									<img src="imgs\maddy.PNG" alt="Madelin">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam quisquam error debitis mollitia necessitatibus obcaecati odio, vel hic quae ut.</p>
+									<p>UI Dev from WEB21, Maddie is a civil engineer with an affinity for public transportation.</p>
 									<a href="https://github.com/maddiestrange" target="_blank"> <img class="gitLogo" src="imgs\github_logo.png" alt="GitHub Logo linking to GitHub Page"></a>
 								</div>
 								<div class="profile leana">
@@ -57,8 +84,15 @@
 								<div class="profile">
 									<h2>Greg Johnston</h2>
 									<img src="imgs\greg.PNG" alt="Greg">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam quisquam error debitis mollitia necessitatibus obcaecati odio, vel hic quae ut.</p>
+									<p>UI Dev from WEB21, Greg once had dinner with first-lady Michelle Obama and Will I Am of the Black Eyed Peas, simultaneously.</p>
 									<a href="https://github.com/gcj2" target="_blank"> <img class="gitLogo" src="imgs\github_logo.png" alt="GitHub Logo linking to GitHub Page"></a>
+									<div id="footerTeam">
+											<ul>
+												<a href="#" class="fa fa-linkedin"></a>
+												<a href="#" class="fa fa-github"></a>
+												<a href="#" class="fa fa-twitter"></a>
+											</ul>
+									</div>
 								</div>
 							</div>
 							</div>
@@ -68,8 +102,21 @@
 							<div class="profile">
 								<h2>Michael Hart</h2>
 								<img src="imgs\michael.PNG" alt="Michael">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam quisquam error debitis mollitia necessitatibus obcaecati odio, vel hic quae ut.</p>
+								<p>Front End Architect from WEB20, Michael once ate dinner with Puffy AmiYumi while having no knowledge of who they were until seeing their tour bus in the parking lot.</p>
 								<a href="https://github.com/fromthehart" target="_blank"> <img class="gitLogo" src="imgs\github_logo.png" alt="GitHub Logo linking to GitHub Page"></a>
+							</div>
+							<div class="profile">
+								<h2>Rory Murray</h2>
+								<img src="imgs\rory.PNG" alt="Rory">
+								<p>Front End Architect from WEB20, Rory was once Youth Governor of Oregon and is well-versed in the intricacies of Soviet weaponry.</p>
+								<a href="https://github.com/rorychristianmurray" target="_blank"> <img class="gitLogo" src="imgs\github_logo.png" alt="GitHub Logo linking to GitHub Page"></a>
+								<div id="footerTeam">
+										<ul>
+											<a href="#" class="fa fa-linkedin"></a>
+											<a href="#" class="fa fa-github"></a>
+											<a href="#" class="fa fa-twitter"></a>
+										</ul>
+								</div>
 							</div>
 						</div>
 						<div class="tabs-item" data-tab="4">
@@ -79,29 +126,19 @@
 								<img src="imgs\zach.PNG" alt="Zach">
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam quisquam error debitis mollitia necessitatibus obcaecati odio, vel hic quae ut.</p>
 								<a href="https://github.com/zchristy" target="_blank"> <img class="gitLogo" src="imgs\github_logo.png" alt="GitHub Logo linking to GitHub Page"></a>
+								<div id="footerTeam">
+										<ul>
+											<a href="#" class="fa fa-linkedin"></a>
+											<a href="#" class="fa fa-github"></a>
+											<a href="#" class="fa fa-twitter"></a>
+										</ul>
+								</div>
 							</div>
 						</div>
-						<!-- <div class="tabs-item" data-tab="5">
-							<div class="tabs-item-title">Quote 5</div>
-							<div class="tabs-item-description">
-								This is a quote.
-							</div>
-						</div>
-						<div class="tabs-item" data-tab="6">
-							<div class="tabs-item-title">Quote 6</div>
-							<div class="tabs-item-description">
-								This is not.
-							</div>
-						</div>
-						<div class="tabs-item" data-tab="7">
-							<div class="tabs-item-title">The Division Bell</div>
-							<div class="tabs-item-description">
-								Was better than The Wall.
-							</div>
-						</div> -->
 					</div>
 				</div>
 			</div>
 		</div>
+
 	</body>
 </html>
