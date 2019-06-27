@@ -29,7 +29,7 @@ header:hover {
     font-size: 3rem;
     @media @phone {
       color: black;
-      padding-top: 100px;
+      padding-top: 120px;
     }
   }
 }
@@ -117,7 +117,6 @@ header:hover {
       color: black;
       z-index: -1;
 
-
     }
   }
   .tabs-link-selected {
@@ -190,7 +189,7 @@ header:hover {
       margin-left: 60px;
       @media @phone {
         margin-left: 0px;
-        justify-items: flex-start;
+        justify-items: flex-start; 
       }
       img {
         transform: translate(0px, -21px);
@@ -236,14 +235,14 @@ header:hover {
       a {
         text-decoration: none;
         text-align: center;
-        color: #0d0221;
+        color: rgb(29, 44, 47);
         padding: 20px;
         font-size: 14px;
         font-weight: 500;
         margin: 10px;
         @media @phone {
           padding: 0;
-        }
+        }   
       }
       a:hover {
         text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.13);
@@ -254,6 +253,10 @@ header:hover {
         background: rgb(46, 114, 185);
         color: white;
         flex-grow: 2;
+        transition: background 600ms;
+      }
+      #id-btn:hover {
+        background: rgb(40, 70, 77)
       }
     }
   }
@@ -262,12 +265,7 @@ header:hover {
     background: white;
   }
 }
-// Mobile size Menu
-
-.nav-bar {
-  // z-index: 5;
-}
-
+// Mobile size Menu 
 .menu {
   display: flex;
   flex-direction: row;
@@ -278,15 +276,15 @@ header:hover {
     padding: 15px;
     font-size: 14px;
     font-weight: 500;
-    color: #0d0221;
+    color: rgb(29, 44, 47);
     margin-left: 20px;
     margin-right: 20px;
   }
   .mobile-login {
     background: rgb(46, 114, 185);
     padding: 10px;
-    height: 35px;
-    color: white;
+    height: 35px; 
+    color: white;  
   }
   @media @phone {
     display: flex;
@@ -300,7 +298,7 @@ header:hover {
     background-color: white;
     border-left: none;
     border-bottom: none;
-    // z-index: 2;
+    z-index: 2; 
     margin: 0 0 0 0;
     transition: height 1000ms;
   }
@@ -308,6 +306,7 @@ header:hover {
 .menu-open {
   height: 50px;
 }
+
 
 
 

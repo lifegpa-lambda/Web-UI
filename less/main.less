@@ -3,6 +3,7 @@
   background: rgb(252, 236, 79);
   @media @phone {
     max-width: 100%;
+    z-index: 2;
   }
 
   nav {
@@ -73,7 +74,7 @@
       a {
         text-decoration: none;
         text-align: center;
-        color: #0d0221;
+        color: rgb(29, 44, 47);
         padding: 20px;
         font-size: 14px;
         font-weight: 500;
@@ -91,6 +92,10 @@
         background: rgb(46, 114, 185);
         color: white;
         flex-grow: 2;
+        transition: background 600ms;
+      }
+      #id-btn:hover {
+        background: rgb(40, 70, 77)
       }
     }
   }
@@ -110,7 +115,7 @@
     padding: 15px;
     font-size: 14px;
     font-weight: 500;
-    color: #0d0221;
+    color: rgb(29, 44, 47);
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -179,6 +184,7 @@
       padding-bottom: 20px;
       padding-top: 30px;
       font-size: 20px;
+      color: rgb(29, 44, 47);
       @media @phone {
         font-size: 18px;
         padding-left: 40px;
@@ -191,12 +197,19 @@
       padding: 15px;
       font-size: 16px;
       font-weight: 600;
+      color: rgb(29, 44, 47);
       border: transparent;
       background:rgb(205, 210, 208);
       margin-top: 20px;
+      transition: background 600ms;
       @media @phone {
         margin-top: 5px;
       }
+    }
+    .learn-btn:focus {outline:0;}
+    .learn-btn:hover {
+      color:white;
+      background: rgb(40, 70, 77);
     }
   }
 
@@ -224,7 +237,7 @@
     top: 28%;
     left: 45%;
     transform: translate(-50%);
-    color: #0d0221;
+    color: rgb(29, 44, 47);
     font-weight: 600;
     @media @tablet {
       font-size: 30px;
@@ -237,6 +250,9 @@
       top: 32%;
       left: 50%;
       transform: translate(-50%);
+    }
+    #gpa {
+      color: rgb(29, 44, 47);
     }
   }
 
@@ -255,7 +271,7 @@
           border-radius: 50%;
       }
       .shadow {
-          box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1) inset;
+          box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.8) inset;
       }
       .mask, .fill {
           -webkit-backface-visibility: hidden;
@@ -277,8 +293,8 @@
         position: absolute;
         margin-left: (300px - 260px)/2;
         margin-top: (300px - 260px)/2;
-        background: rgb(205, 210, 208);
-        opacity: 0.9;
+        background-image: url("../assets/background3.jpg");
+        // opacity: 0.9;
         border-radius: 50%;
         box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.8);
     }
@@ -293,10 +309,20 @@
   a {
     display: inline-block;
     padding: 20px;
-    font-size: 20px;
+    font-size: 25px;
     width: 50px;
     text-decoration: none;
     margin-top: 15px;
-    color: black;
+    color: rgb(29, 44, 47);
   }
+  .footer-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    p {
+      margin: 0 20px 0 20px;
+      color: rgb(29, 44, 47);
+  }
+}
 }
