@@ -457,7 +457,7 @@ img {
   border-radius: 50%;
 }
 .banner .radial-progress .circle .shadow {
-  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.8) inset;
 }
 .banner .radial-progress .circle .mask,
 .banner .radial-progress .circle .fill {
@@ -492,7 +492,7 @@ img {
 #footer-main a {
   display: inline-block;
   padding: 20px;
-  font-size: 20px;
+  font-size: 25px;
   width: 50px;
   text-decoration: none;
   margin-top: 15px;
