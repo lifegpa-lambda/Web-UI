@@ -282,8 +282,16 @@ img {
   text-decoration: none;
   padding: 15px;
   font-size: 14px;
+  font-weight: 500;
   color: #0d0221;
   margin-left: 20px;
+  margin-right: 20px;
+}
+.menu .mobile-login {
+  background: #2e72b9;
+  padding: 10px;
+  height: 35px;
+  color: white;
 }
 @media (max-width:500px) {
   .menu {
