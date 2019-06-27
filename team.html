@@ -3,32 +3,23 @@
 	<head>
 		<title>Meet the Team</title>
 		<link rel="stylesheet" href="./CSS/index.css">
+		<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script src="JS\main.js" async></script>
+		<script src="menuMobile.js" async></script>
 	</head>
 	<body>
-		<script defer="defer" src="JS\about.js"></script>
-
-		<!-- <header id="header">
-			<div class="nav-bar">
-				<nav>
-					<div id="logo">
-						<img id="img" src="assets/logo.png"/>
-						<p>LifeGPA</p>
-					</div>
-					<div class="headerLinks">
-						<a href="index.html">HOME</a>
-						<a href="about.html">ABOUT</a>
-						<a href="team.html">TEAM</a>
-						<a id="id-btn" href="">SIGN UP</a>
-					</div>
-				</nav>
-			</div>
-		</header> -->
 		<header id="header-main">
 				<div class="nav-bar">
 					<nav>
 						<div id="logo">
 							<img id="img" src="assets/logo.png"/>
 							<div class="title" data-end="TM">LifeGPA</div>
+						</div>
+						<div class="menu-button">
+							<div class="line"></div>
+							<div class="line"></div>
+							<div class="line"></div>
 						</div>
 						<div class="headerLinks">
 							<a href="index.html">HOME</a>
@@ -39,6 +30,12 @@
 					</nav>
 				</div>
 			</header>
+			<div class="menu">
+					<a href="index.html">HOME</a>
+					<a href="about.html">ABOUT</a>
+					<a href="team.html">TEAM</a>
+					<a class="mobile-login" href="team.html">LOGIN</a>
+			</div>
 		<div class="bannerWelcome">
 			<h2>Meet the Team</h2>
 		</div>
@@ -51,7 +48,6 @@
 						<div class="tabs-link" data-tab="3">Front End</div>
 						<div class="tabs-link" data-tab="4">Back End</div>
 					</div>
-					<!-- <div class="bannerImage"><img src="imgs\banner.jpg" alt="banner"></div> -->
 					<div class="tabs-items">
 						<div class="tabs-item tabs-item-selected" data-tab="1">
 							<div class="tabs-item-title">Team Lead</div>
@@ -111,27 +107,16 @@
 								<a href="https://github.com/zchristy" target="_blank"> <img class="gitLogo" src="imgs\github_logo.png" alt="GitHub Logo linking to GitHub Page"></a>
 							</div>
 						</div>
-						<!-- <div class="tabs-item" data-tab="5">
-							<div class="tabs-item-title">Quote 5</div>
-							<div class="tabs-item-description">
-								This is a quote.
-							</div>
-						</div>
-						<div class="tabs-item" data-tab="6">
-							<div class="tabs-item-title">Quote 6</div>
-							<div class="tabs-item-description">
-								This is not.
-							</div>
-						</div>
-						<div class="tabs-item" data-tab="7">
-							<div class="tabs-item-title">The Division Bell</div>
-							<div class="tabs-item-description">
-								Was better than The Wall.
-							</div>
-						</div> -->
 					</div>
 				</div>
 			</div>
 		</div>
+		<footer id="footer-main">
+				<ul>
+					<a href="#" class="fa fa-linkedin"></a>
+					<a href="#" class="fa fa-github"></a>
+					<a href="#" class="fa fa-twitter"></a>
+				</ul>
+		</footer>
 	</body>
 </html>
