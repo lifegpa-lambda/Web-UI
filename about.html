@@ -7,9 +7,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
     <script></script>
     <script src="about.js" async></script>
+    <script src="menuMobile.js" async></script>
   </head>
   <body class="">
    
@@ -19,17 +21,28 @@
             <nav>
               <div id="logo">
                 <img id="img" src="assets/LifeGPAicon.ico"/>
-                <p>LifeGPA</p>
+                <div class="title" data-end="TM">LifeGPA</div>
+              </div>
+              <div class="menu-button">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
               </div>
               <div class="headerLinks">
                 <a href="index.html">HOME</a>
                 <a href="about.html">ABOUT</a>
                 <a href="team.html">TEAM</a>
-                <a id="id-btn" href="">SIGN UP</a>
+                <a id="id-btn" href="https://lifegpa-app.netlify.com/login">LOGIN</a>
               </div>
             </nav>
           </div>
         </header>
+        <div class="menu">
+          <a href="index.html">HOME</a>
+          <a href="about.html">ABOUT</a>
+          <a href="team.html">TEAM</a>
+          <a class="mobile-login" href="team.html">LOGIN</a>
+      </div>
 
       <!--BANNER-->
       <section class="aboutBanner">
@@ -101,8 +114,12 @@
       </section>
 
       <!--FOOTER-->
-      <footer class="footer">
-
+      <footer class="footerABT">
+        <ul>
+          <a href="#" class="fa fa-linkedin"></a>
+          <a href="#" class="fa fa-github"></a>
+          <a href="#" class="fa fa-twitter"></a>
+        </ul>
       </footer>
 
   </body>

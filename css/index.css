@@ -492,58 +492,158 @@ body {
 }
 #ABTheader {
   background: #6488DD;
+  font-weight: bold;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
 }
-@media (max-width:500px) {
+@media (max-width: 800px) {
   #ABTheader {
-    max-width: 100%;
+    background: #6488DD;
+    margin-bottom: 40px;
   }
 }
 #ABTheader nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100px;
 }
-@media (max-width:500px) {
+@media (max-width: 800px) {
   #ABTheader nav {
-    flex-direction: column;
+    flex-direction: row-reverse;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 80px;
+    position: fixed;
+    width: 100%;
   }
+}
+#ABTheader nav #logo {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-left: 60px;
+}
+@media (max-width: 800px) {
+  #ABTheader nav #logo {
+    margin-left: 0px;
+    justify-items: flex-start;
+  }
+}
+#ABTheader nav #logo img {
+  margin-right: 10px;
+}
+#ABTheader nav #logo .title {
+  font-size: 24px;
+  font-weight: 500;
+}
+#ABTheader nav #logo .title::after {
+  content: attr(data-end);
+  font-size: 12px;
+  padding-left: 2px;
+}
+#ABTheader nav .menu-button .line {
+  width: 35px;
+  height: 5px;
+  background-color: #fcec4f;
+  margin: 6px 0;
+  display: none;
+}
+@media (max-width: 800px) {
+  #ABTheader nav .menu-button .line {
+    display: block;
+  }
+}
+#ABTheader nav .headerLinks {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-right: 60px;
+  height: 70px;
+}
+@media (max-width: 800px) {
+  #ABTheader nav .headerLinks {
+    flex-direction: column;
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 0;
+    display: none;
+  }
+}
+#ABTheader nav .headerLinks a {
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  color: #0d0221;
+  padding: 20px;
+  font-size: 14px;
+  margin: 10px;
+}
+@media (max-width: 800px) {
+  #ABTheader nav .headerLinks a {
+    padding: 0;
+  }
+}
+#ABTheader nav .headerLinks a:hover {
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.13);
+}
+#ABTheader nav .headerLinks #id-btn {
+  height: 50px;
+  width: 120px;
+  background: #fcec4f;
+  color: black;
+  flex-grow: 2;
 }
 #ABTheader nav:hover {
   background: white;
 }
-#ABTheader .headerLinks {
+.menu {
   display: flex;
-  align-items: center;
-  height: 70px;
-  margin-right: 30px;
+  flex-direction: row;
+  justify-content: space-between;
+  display: none;
 }
-@media (max-width:500px) {
-  #ABTheader .headerLinks {
-    margin-top: -25px;
-    margin-right: 0;
+.menu a {
+  text-decoration: none;
+  padding: 15px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0d0221;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.menu .mobile-login {
+  background: #fcec4f;
+  padding: 10px;
+  height: 35px;
+  color: black;
+}
+@media (max-width: 800px) {
+  .menu {
+    display: flex;
+    position: fixed;
+    text-align: left;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    background-color: white;
+    border-left: none;
+    border-bottom: none;
+    z-index: 2;
+    margin: 0 0 0 0;
+    transition: height 1000ms;
   }
 }
-#ABTheader a {
-  text-decoration: none;
-  color: black;
-  font-size: 1.6rem;
-  padding: 0 1.5rem;
-}
-#ABTheader a:hover {
-  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.13);
-}
-#ABTheader #logo {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
-  margin: 20px;
-}
-#ABTheader #logo img {
-  margin-right: 10px;
-}
-#ABTheader p {
-  font-size: 2.4rem;
+.menu-open {
+  height: 50px;
+  padding-bottom: 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
 }
 .aboutBanner {
   background-color: #6488DD;
@@ -553,6 +653,8 @@ body {
   font-family: 'Playfair Display', serif;
   display: flex;
   justify-content: center;
+  padding-top: 40px;
+  margin-top: 40px;
 }
 .aboutBox {
   font-family: 'Playfair Display', serif;
@@ -780,21 +882,36 @@ body {
     width: 100%;
   }
 }
-.footer {
+.footerABT {
   background: #6488DD;
   height: 500px;
   width: 100%;
   margin-top: 938px;
 }
 @media (max-width:1200px) {
-  .footer {
+  .footerABT {
     margin-top: 1396px;
   }
 }
 @media (max-width:500px) {
-  .footer {
+  .footerABT {
     margin-top: 1887px;
   }
+}
+.footerABT ul {
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+  transform: translate(0, 400px);
+}
+.footerABT a {
+  display: inline-block;
+  padding: 20px;
+  font-size: 20px;
+  width: 50px;
+  text-decoration: none;
+  margin-top: 15px;
+  color: black;
 }
 h2 {
   color: black;
