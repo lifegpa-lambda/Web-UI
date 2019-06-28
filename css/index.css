@@ -673,7 +673,7 @@ body {
 }
 .aboutBanner {
   background-color: #6488DD;
-  height: 550px;
+  height: 660px;
 }
 .aboutMain {
   font-family: 'Playfair Display', serif;
@@ -691,7 +691,7 @@ body {
   margin: 0 0 2em 0;
   padding: 3em;
   text-align: center;
-  margin-top: -500px;
+  margin-top: -590px;
   position: absolute;
   z-index: 5;
   width: 1200px;
@@ -715,6 +715,7 @@ body {
 }
 .aboutBox .aboutBoxTop p {
   margin-top: 10px;
+  font-size: 2rem;
 }
 .aboutBox h2 {
   font-family: 'Playfair Display', serif;
@@ -821,7 +822,6 @@ body {
   transition: 0.4s;
 }
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active,
 .gradeCard:hover {
   background-color: #F6F7F8;
 }
@@ -915,16 +915,16 @@ body {
   background: #6488DD;
   height: 500px;
   width: 100%;
-  margin-top: 938px;
+  margin-top: 897px;
 }
 @media (max-width:1200px) {
   .footerABT {
-    margin-top: 1396px;
+    margin-top: 1357px;
   }
 }
 @media (max-width:500px) {
   .footerABT {
-    margin-top: 1887px;
+    margin-top: 1872px;
   }
 }
 .footerABT ul {

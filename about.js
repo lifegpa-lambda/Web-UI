@@ -10,7 +10,6 @@ class Card {
     expandArticle() {
       // Using our reference to the domElement, toggle a class to expand or hide the article.
       console.log("I was clicked!")
-      this.domElement.classList.toggle("active");
 
       var panel = this.domElement.nextElementSibling;
       if (panel.style.display === "block") {
