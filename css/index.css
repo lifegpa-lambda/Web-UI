@@ -470,7 +470,7 @@ img {
   -webkit-backface-visibility: hidden;
   transition: -webkit-transform 2s;
   transition: -ms-transform 2s;
-  transition: transform 2s;
+  transition: transform 2s ;
 }
 .banner .radial-progress .circle .mask {
   clip: rect(0px, 300px, 300px, 150px);

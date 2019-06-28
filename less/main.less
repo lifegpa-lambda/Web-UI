@@ -272,18 +272,22 @@
       }
       .shadow {
           box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.8) inset;
+          
       }
       .mask, .fill {
           -webkit-backface-visibility: hidden;
-          transition: -webkit-transform 2s;
-          transition: -ms-transform 2s;
-          transition: transform 2s;
+          transition: -webkit-transform 2s ;
+          transition: -ms-transform 2s ;
+          transition: transform 2s ;
+         
       }
       .mask {
           clip: rect(0px, 300px, 300px, 300px/2);
           .fill {
+              // clip: rect(0px, 300px/2, 300px, 0px);
               clip: rect(0px, 300px/2, 300px, 0px);
               background:rgb(46, 114, 185);
+              
           }
         }
     }
