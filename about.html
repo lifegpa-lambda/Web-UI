@@ -7,9 +7,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
     <script></script>
     <script src="about.js" async></script>
+    <script src="menuMobileTeam.js" async></script>
   </head>
   <body class="">
    
@@ -19,17 +21,28 @@
             <nav>
               <div id="logo">
                 <img id="img" src="assets/LifeGPAicon.ico"/>
-                <p>LifeGPA</p>
+                <div class="title" data-end="TM">LifeGPA</div>
+              </div>
+              <div class="menu-button">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
               </div>
               <div class="headerLinks">
                 <a href="index.html">HOME</a>
                 <a href="about.html">ABOUT</a>
                 <a href="team.html">TEAM</a>
-                <a id="id-btn" href="">SIGN UP</a>
+                <a id="id-btn" href="https://lifegpa-app.netlify.com/login">LOGIN</a>
               </div>
             </nav>
           </div>
         </header>
+        <div class="menu">
+          <a href="index.html">HOME</a>
+          <a href="about.html">ABOUT</a>
+          <a href="team.html">TEAM</a>
+          <a class="mobile-login" href="team.html">LOGIN</a>
+      </div>
 
       <!--BANNER-->
       <section class="aboutBanner">
@@ -41,28 +54,32 @@
         <section class="aboutBox">
           <div class="aboutBoxTop">
               <h2>About</h2>
-              <p>Sed odio morbi quis commodo odio aenean sed adipiscing.</p>
+              <p>LifeGPA helps you grade your life so you can improve it, one habit at a time.</p>
           </div>
 
           <div class="aboutMidBox">
             <section class="reportCard">
-              <h3>Your Report Card for Life</h3>
+              <h3>Your Report Card:</h3>
               <button class="gradeCard"><ul style="list-style-type:none;">
-                  <li>&#9744; Life Habits</ul></button>
+                  <li>&#9744; Positive Habits</ul></button>
               <div class="panel">
-                <p>Lorem ipsum...</p>
+                <p>Create habits to track things you want to start doing everyday. <br>
+                  Check habits off the list as you get to them.
+                </p>
               </div>
               
               <button class="gradeCard"><ul style="list-style-type:none;">
-                  <li>&#9744; Sleep</ul></button>
+                  <li>&#9744; Negative Habits</ul></button>
               <div class="panel">
-                <p>Lorem ipsum...</p>
+                <p>Create habits to track things you need to stop doing. <br>
+                Check off each day where you resist the habit.</p>
               </div>
               
-              <button class="gradeCard"><ul style="list-style-type:none;">
-                  <li>&#9744; What's Most Important</ul></button>
+              <button class="gradeCard"><li style="list-style-type:none;">
+                  <ul>&#9744; Consistency </ul></button>
               <div class="panel">
-                <p>Lorem ipsum...</p>
+                <p>GPA calculated daily as well as for the past 30, 60, and 90 days <br>
+                  to help keep you on track.</p>
               </div>
               </section>
           <img class="aboutImg" src="assets/climb.jpg">
@@ -71,16 +88,16 @@
 
           <div class="aboutAPP">
            <div class="aboutAPP1">
-             <img src="">
-             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <img src="assets/NewHabit.PNG">
+             <p>Create your habits.</p>
             </div> 
             <div class="aboutAPP2">
-                <img src="">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <img src="assets/KeepTrack.PNG">
+                <p>Keep track of your habits every day.</p>
                </div> 
             <div class="aboutAPP3">
-              <img src="">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+              <img src="assets/GPA.PNG">
+              <p>See your GPA change over time.</p>
               </div>    
           </div>
 
@@ -101,8 +118,12 @@
       </section>
 
       <!--FOOTER-->
-      <footer class="footer">
-
+      <footer class="footerABT">
+        <ul>
+          <a href="#" class="fa fa-linkedin"></a>
+          <a href="#" class="fa fa-github"></a>
+          <a href="#" class="fa fa-twitter"></a>
+        </ul>
       </footer>
 
   </body>
