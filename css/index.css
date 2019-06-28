@@ -508,9 +508,27 @@ img {
   justify-content: center;
   align-items: center;
 }
-#footer-main .footer-bottom p {
-  margin: 0 20px 0 20px;
+#footer-main .footer-bottom .copyright {
+  font-size: 16px;
+  margin: 0 5px 0 20px;
   color: #1d2c2f;
+}
+#footer-main .footer-bottom .rights {
+  margin: 0 10px 0 5px;
+  color: #1d2c2f;
+  font-size: 16px;
+}
+#footer-main .footer-bottom .privacy {
+  margin: 0 40px 0 10px;
+  color: #28464d;
+  text-decoration: underline;
+  font-size: 16px;
+}
+#footer-main .footer-bottom .contact {
+  margin: 0 20px 0px 20px;
+  color: #28464d;
+  text-decoration: underline;
+  font-size: 16px;
 }
 body {
   font-size: 62.5%;
