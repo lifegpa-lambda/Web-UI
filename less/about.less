@@ -1,5 +1,5 @@
 
-@ABTtablet: ~"(max-width:1200px)";
+@ABTtablet: ~"(max-width:1300px)";
 body{
   font-size: 62.5%;
   font-family: 'Playfair Display', serif;
@@ -256,8 +256,8 @@ body{
    .aboutAPP{
      display: flex;
      flex-direction: row;
-     margin-top: 40px;
-     @media @phone{
+     margin-top: 80px;
+     @media @ABTtablet{
      flex-direction: column;
      }
 
@@ -267,15 +267,23 @@ body{
        width: 33%;
        margin: 20px;
        justify-content: center;
-       @media @phone{
+       @media @ABTtablet{
         width: 100%;
         margin: 0;
         }
        img{
-        background: gray;
-        height: 400px;
+        border-radius: 10px;
+        height: 350px;
+        @media @ABTtablet{
+          height: 60%;
+        }
+        @media @phone{
+          height: 400px;
+        }
+        
        }
        p{
+         font-size: 2rem;
         text-align: center;
         margin-top: 15px;
        }
@@ -393,12 +401,12 @@ body{
   background: #6488DD;
   height: 500px;
   width: 100%;
-  margin-top: 897px;
+  margin-top: 835px;
  @media @ABTtablet {
-   margin-top: 1357px;
+   margin-top: 3533px;
  }
  @media @phone {
-   margin-top: 1872px;
+   margin-top: 1902px;
  }
  ul{
   display: flex;
